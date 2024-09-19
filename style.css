@@ -1,3 +1,63 @@
-h1 {
-    color: red;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond";
+}
+
+header{
+    background-color: #57290B;
+    width: 100%;
+    height: auto;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 18px;
+}
+
+.nav{
+    list-style-type: none;
+    display: flex;
+    font-weight: bold;
+    gap: 7.5rem;
+}
+
+.nav li{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav li::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    bottom: -0.2rem;
+    width: 0;
+    background-color: #B2784A;
+    transition: width 0.5s ease, left 0.5s ease;
+    border-radius: 1px;
+}
+
+.nav li:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.nav li:hover{
+    color: #B2784A;
+    transition: color 0.5s ease;
+}
+
+#logo{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 0.5rem;
 }
