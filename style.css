@@ -103,8 +103,21 @@
 }
 
 .btn:hover{
-    width: 20vw;
+    width: 19vw;
     background-color: #B2784A;
     transition: width 0.5s ease, height 0.5s ease;
     box-shadow: #8F542E 0px 5px 15px;
+}
+
+footer{
+    background-color: #57290B;
+    width: 100%;
+}
+
+#foot{
+    display: flex;
+    justify-content: space-between;
+    color: #FFDAB8;
+    padding: 1.5rem 7.5rem 1.5rem 7.5rem;
+    font-family: 'Open Sans', sans-serif;
 }
