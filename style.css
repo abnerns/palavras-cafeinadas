@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant Garamond", sans-serif;
 }
 
 #navbar{
@@ -107,6 +107,45 @@
     background-color: #B2784A;
     transition: width 0.5s ease, height 0.5s ease;
     box-shadow: #8F542E 0px 5px 15px;
+}
+
+#about-us{
+    background-color: #EBDACC;
+}
+
+#about-container{
+    padding: 5rem 15rem 5rem 7.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-box{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title{
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 1rem;
+    z-index: 10;
+}
+
+.title::after{
+    position: absolute;
+    background-color: #FBC9A8;
+    left: -20px;
+    bottom: -2px;
+    content: '';
+    height: 28px;
+    width: 255px;
+    z-index: -1;
 }
 
 footer{
