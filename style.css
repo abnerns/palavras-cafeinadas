@@ -5,7 +5,7 @@
     font-family: "Cormorant Garamond";
 }
 
-header{
+#navbar{
     background-color: #57290B;
     width: 100%;
     height: auto;
@@ -19,6 +19,10 @@ header{
     font-size: 18px;
 }
 
+#menu p{
+    color: #F0F0F0;
+}
+
 .nav{
     list-style-type: none;
     display: flex;
@@ -28,9 +32,9 @@ header{
 
 .nav li{
     text-decoration: none;
-    color: white;
     position: relative;
     cursor: pointer;
+    color: #F0F0F0;
 }
 
 .nav li::after{
@@ -60,4 +64,47 @@ header{
     flex-flow: column wrap;
     align-items: center;
     gap: 0.5rem;
+}
+
+#home{
+    background-image: url("./images/background.png"); 
+    height: 76.5vh;
+}
+
+#box-home{
+    width: 45vw;
+    padding-top: 4rem;
+    padding-left: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #F0F0F0;
+}
+
+#box-home p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn{
+    background-color: #8F542E;
+    color: #F0F0F0;
+    border: none;
+    width: 18.42vw;
+    height: 7.8vh;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    width: 20vw;
+    background-color: #B2784A;
+    transition: width 0.5s ease, height 0.5s ease;
+    box-shadow: #8F542E 0px 5px 15px;
 }
