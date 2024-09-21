@@ -41,9 +41,9 @@
     content: '';
     position: absolute;
     height: 2px;
-    left: 50%;
-    bottom: -0.2rem;
-    width: 0;
+    left: 15%;
+    bottom: -0.25rem;
+    width: 65%;
     background-color: #B2784A;
     transition: width 0.5s ease, left 0.5s ease;
     border-radius: 1px;
@@ -85,6 +85,81 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+#about-us{
+    background-color: #EBDACC;
+    position: relative;
+}
+
+#about-container{
+    padding: 5rem 15rem 12rem 7.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#about-box{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#cafe-onda{
+    position: absolute;
+    width: 100%;
+    bottom: -7rem;
+}
+
+#cafeteria{
+    background-color: #80451F;
+}
+
+#cafeteria-box{
+    padding: 12rem 7.5rem 5rem 7.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+#caf-title{
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    color: #F0F0F0;
+}
+
+#caf-title::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 15%;
+    bottom: -0.2rem;
+    width: 70%;
+    background-color: #B2784A;
+    transition: width 0.5s ease, left 0.5s ease;
+    border-radius: 1px;
+}
+
+#contact{
+    background-color: #EBDACC;
+}
+
+#contact-container{
+    padding: 5rem 7.5rem 5rem 7.5rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#contact .title::after{
+    width: 438px !important;
+}
+
+#contact-box{
+    width: 100%;
+    background-color: #8F542E;
+}
+
 .btn{
     background-color: #8F542E;
     color: #F0F0F0;
@@ -92,6 +167,7 @@
     width: 18.42vw;
     height: 7.8vh;
     border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 800;
     display: flex;
@@ -107,25 +183,6 @@
     background-color: #B2784A;
     transition: width 0.5s ease, height 0.5s ease;
     box-shadow: #8F542E 0px 5px 15px;
-}
-
-#about-us{
-    background-color: #EBDACC;
-}
-
-#about-container{
-    padding: 5rem 15rem 5rem 7.5rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-#about-box{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    width: 32vw;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
 }
 
 .title{
