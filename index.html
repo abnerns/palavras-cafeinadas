@@ -11,19 +11,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <div id="navbar">
             <div id="menu">
                 <ul class="nav">
-                    <a><li>Sobre nós</li></a>
-                    <a><li>Cafeteria</li></a>
+                    <a href="#about-us"><li>Sobre nós</li></a>
+                    <a href="#cafeteria"><li>Cafeteria</li></a>
                 </ul>
-                <span id="logo"><img alt="logo" src="./images/logo_escura.png"><p>Palavras Cafeinadas</p></span>
+                <span class="logo"><img alt="logo" src="./images/logo_escura.png"><p>Palavras Cafeinadas</p></span>
                 <ul class="nav">
-                    <a><li>Contato</li></a>
-                    <span style="display: flex; gap: 0.75rem;"><img alt="tel" src="./images/Icon - Phone.svg"><p>19-991256972</p></span>
+                    <a href="#contact"><li>Contato</li></a>
+                    <span style="display: flex; gap: 0.75rem;"><span class="material-icons" style="border-radius: 2px; background-color: #B2784A; color: #57290B;">call</span><p>19-991256972</p></span>
                 </ul>
             </div>
         </div>
@@ -31,7 +32,7 @@
             <div id="box-home">
                 <p style="font-size: 56px; font-weight: bold;">Leia acompanhado de uma culinária de qualidade</p>
                 <p style="font-size: 24px;">Aonde a paixão por livros e o amor por café sempre  tem lugar á mesa.</p>
-                <button class="btn">VENHA CONHECER<img alt="arrow" src="./images/right-arrow.svg"></button>
+                <button class="btn">VENHA CONHECER<span class="material-icons">east</span></button>
             </div>
         </div>
     </header>
@@ -42,7 +43,7 @@
                     <p class="title">SOBRE NÓS</p>
                     <p>A principal proposta da Cafeteria Palavras Cafeinadas é oferecer um espaço aconchegante, contendo um ambiente moderno e um atendimento completo, nela é possível provar refeições saborosas e ler excelentes livros.</p>
                     <p>O sonho de Carolina era criar um espaço aonde pudesse unir seu amor por culinária e a enorme paixão por literatura, venha saber mais dessa jornada:</p>
-                    <button class="btn">FALE CONOSCO<img alt="arrow" src="./images/right-arrow.svg"></button>
+                    <button class="btn">FALE CONOSCO<span class="material-icons">east</span></button>
                 </div>
                 <img alt="coffe-group" src="./images/coffee-group.png">
             </div>
@@ -61,11 +62,47 @@
                 <p class="title">ENTRE EM CONTATO</p>
                 <div id="contact-box">
                     <div id="info">
-
+                        <span>
+                            <span class="material-icons contact-icon">call</span>
+                            <p>19-991256972</p>
+                        </span>
+                        <span>
+                            <span class="material-icons contact-icon">mail</span>
+                            <p>contato@gmail.com</p>
+                        </span>
+                        <span>
+                            <span class="material-icons" style="color: #F0F0F0;">location_on</span>
+                            <p style="width: 224px;">Av. Paulista, 1324 - Bela Vista, São Paulo - SP, 01310-100</p>
+                        </span>
+                        <div id="hr"></div>
+                        <span>
+                            <a href="https://www.instagram.com/" target="_blank"><img alt="insta-icon" src="./images/insta-icon.png"></a>
+                            <p>@palavrascafeinadas</p>
+                        </span>
+                        <span>
+                            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img alt="face-icon" src="./images/face-icon.png"></a>
+                            <p>Palavras Cafeinadas</p>
+                        </span>
+                        <div class="logo" style="margin-top: 7.5rem; align-self: flex-end;">
+                            <img alt="logo-branca" src="./images/logo-branca.png">
+                            <p style="font-family: 'Cormorant Garamond', sans-serif; font-size: 32px;">Palavras Cafeinadas</p>
+                        </div>
                     </div>
-                    <div id="form">
-
-                    </div>
+                    <form id="form">
+                        <span>
+                            <p>Nome</p>
+                            <input type="name" id="name" name="name" required>
+                        </span>
+                        <span>
+                            <p>E-Mail</p>
+                            <input type="email" id="email" name="email" required>
+                        </span>
+                        <span>
+                            <p>Mensagem</p>
+                            <textarea type="message" id="message" name="message" required></textarea>
+                        </span>
+                        <button class="btn">ENVIAR MENSAGEM<span class="material-icons">east</span></button>
+                    </form>
                 </div>
             </div>
         </section>
