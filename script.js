@@ -65,3 +65,24 @@ function messageValidate(){
         return true;
     }
 }
+
+window.onload = function(){
+    const menu = document.querySelector('.hamburger');
+    const mobile = document.querySelector('.mobile-nav')
+    const logoText = document.getElementById('logo-text');
+    const background = document.querySelectorAll('main, footer');
+
+    menu.addEventListener('click', function () {
+        menu.classList.toggle('is-active');
+        mobile.classList.toggle('is-active');
+        background.forEach(element => {
+            element.classList.toggle('overlay');
+        });
+
+        if (logoText.style.display === 'none') {
+            logoText.style.display = 'block';
+        } else {
+            logoText.style.display = 'none';
+        }
+    })
+}

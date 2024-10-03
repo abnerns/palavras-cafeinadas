@@ -62,6 +62,44 @@
     transition: color 0.5s ease;
 }
 
+.mobile-nav{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 98;
+    background-color: #F5F3ED;
+    margin-top: 67px;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.mobile-nav.is-active{
+    display: flex;
+}
+
+.mobile-nav a{
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+main.overlay, footer.overlay {
+    filter: brightness(50%);
+}
+
 .logo{
     display: flex;
     flex-flow: column wrap;
@@ -72,10 +110,12 @@
 #home{
     background-image: url("./images/background.png"); 
     height: 76.5vh;
+    background-size: cover;
+    height: 559px;
 }
 
 #box-home{
-    width: 45vw;
+    width: 50vw;
     padding-top: 4rem;
     padding-left: 7.5rem;
     display: flex;
@@ -86,6 +126,15 @@
 
 #box-home p{
     font-family: 'Open Sans', sans-serif;
+}
+
+#box-home-title{
+    font-size: 3.5rem; 
+    font-weight: bold;
+}
+
+#box-home-subtitle{
+    font-size: 1.5rem;
 }
 
 #about-us{
@@ -207,7 +256,7 @@
 }
 
 #contact .title::after{
-    width: 438px !important;
+    width: 438px;
 }
 
 #contact-box{
@@ -324,7 +373,7 @@ form{
 
 .title{
     font-family: "Cormorant Garamond", sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: bold;
     position: relative;
     margin-bottom: 1rem;
@@ -353,4 +402,201 @@ footer{
     color: #FFDAB8;
     padding: 1.5rem 7.5rem 1.5rem 7.5rem;
     font-family: 'Open Sans', sans-serif;
+}
+
+.hamburger{
+    position: relative;
+    display: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #B2784A;
+    margin: 10px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active .bar{
+    transform: rotate(-45deg) translate(-10px, 0px);
+}
+
+.hamburger.is-active:after{
+    transform: rotate(45deg) translate(-10px, 0px);
+}
+
+.mobile-contact{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 2.5rem;
+    gap: 2rem;
+    display: none;
+}
+
+.mobile-social{
+    display: flex;
+    gap: 2rem;
+}
+
+.mobile-social a{
+    cursor: pointer;
+}
+
+@media(max-width: 400px) {
+    .nav {
+        display: none;
+    }
+
+    .logo{
+        flex-flow: row;
+        gap: 4rem;
+    }
+
+    .logo img{
+        width: 25px;
+    }
+
+    #menu{
+        width: 100%;
+        padding: 1rem 2rem 1rem 2rem;
+        justify-content: space-between;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    #box-home {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    #home{
+        height: 242px;
+    }
+
+    #box-home p{
+        font-size: 1.75rem;
+    }
+
+    #box-home-subtitle{
+        display: none;
+    }
+
+    .btn{
+        width: 217px;
+        height: 44px;
+        font-family: 'Mulish', sans-serif;
+        font-size: 14px;
+    }
+
+    .btn:hover{
+        width: 217px;
+    }
+
+    .title{
+        font-size: 24px;
+        font-family: "Cormorant Garamond", sans-serif !important;
+    }
+
+    .title::after{
+        width: 50%;
+        bottom: -5px;
+        height: 21px;
+        left: -15px;
+    }
+
+    #about-container {
+        padding: 2rem;
+        flex-direction: column;
+        padding-bottom: 7.5rem;
+    }
+
+    #about-box .btn{
+        align-self: center;
+    }
+
+    #about-box p{
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    #about-container img{
+        display: none;
+    }
+
+    #cafe-onda{
+        bottom: -35px;
+        height: 100px;
+    }
+
+    #about-box, #cafeteria-container {
+        padding: 0;
+        width: 100%;
+    }
+
+    #cafeteria-container{
+        padding-top: 5rem;
+    }
+
+    #contact-container{
+        padding: 1.5rem;
+        padding-top: 5rem;
+    }
+
+    #contact-box{
+        margin-top: 1rem;
+    }
+
+    #contact-container .title{
+        margin-left: 0.5rem;
+    }
+
+    #contact-container .title::after{
+        width: 80%;
+        left: -15px;
+    }
+
+    #form{
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    #form input{
+        height: 48px;
+    }
+
+    #form textarea{
+        height: 160px;
+    }
+
+    #form .btn{
+        margin-top: 1rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #info{
+        display: none;
+    }
+
+    .mobile-contact{
+        display: flex;
+    }
+
+    #foot{
+        padding: 1rem;
+        flex-direction: column;
+    }
 }
