@@ -205,14 +205,18 @@ main.overlay, footer.overlay {
     display: grid;
     grid-auto-flow: column;
     gap: 2rem;
-    padding: 0 5rem 0 5rem;
-    overflow: hidden;
+    padding: 0 3rem 0 3rem;
+    overflow-x: scroll;
+}
+
+#carousel::-webkit-scrollbar{
+    display: none;
 }
 
 .card{
     background-color: #F0F0F0;
     border-radius: 8px;
-    width: 22.4vw;
+    width: 23vw;
     height: auto;
     display: flex;
     flex-flow: column wrap;
@@ -220,11 +224,18 @@ main.overlay, footer.overlay {
     gap: 0.5rem;
 }
 
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.025);
+    transition: 0.4s;
+}
+
 .card p{
     font-family: 'Open Sans', sans-serif;
 }
 
 .card img{
+    width: 100%;
     border-radius: 5px;
 }
 

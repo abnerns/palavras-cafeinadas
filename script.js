@@ -4,6 +4,10 @@ const nameRegex = /^[A-Za-z\s]+$/;
 const fields = document.querySelectorAll(".required");
 const validate = document.querySelectorAll(".validate");
 
+const carousel = document.getElementById('carousel');
+const backBtn = document.getElementById('back');
+const nextBtn = document.getElementById('next');
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const validName = nameValidate();
@@ -65,6 +69,21 @@ function messageValidate(){
         return true;
     }
 }
+
+carousel.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    carousel.scrollLeft += e.deltaY;
+})
+
+backBtn.addEventListener('click', () => {
+    carousel.style.scrollBehavior = "smooth"
+    carousel.scrollLeft -= 1200;
+})
+
+nextBtn.addEventListener('click', () => {
+    carousel.style.scrollBehavior = "smooth"
+    carousel.scrollLeft += 1200;
+})
 
 window.onload = function(){
     const menu = document.querySelector('.hamburger');
