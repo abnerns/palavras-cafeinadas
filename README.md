@@ -4,6 +4,10 @@
     <br> 
 </p>
 
+<div align="center">
+  <a href="https://unect.com.br/">Unect Jr.</a>
+</div>
+
 ## 📝 Table of Contents
 
 - [About](#about)
@@ -16,11 +20,11 @@
 
 O projeto incluiu as seguintes etapas:
 
-- **Capacitação:** Aprofundar-se nos conhecimentos de HTML, CSS e JavaScript durante a semana de capacitação, para que pudessem ser usados nas três semanas de desenvolvimento posteriores.
+- **Capacitação:** Aprofundar-se nos conhecimentos de HTML, CSS e JavaScript durante a semana de capacitação, para que pudessem ser utilizados nas três semanas de desenvolvimento posteriores.
 - **Prototipação:** Analisar o design do Figma e discutir com o padrinho estratégias de como abordar o projeto, para poder estruturar a página da maneira mais fiel possível ao seu design original.
 - **Front-end:** Com base no layout disponível, deveria realizar a codificação da interface previamente prototipada, tornando sua visualização agradável e responsiva, com um carrossel funcional e formulário com autenticação.
 
-<img src="./images/coffeeshop-image" alt="Project Coffee Shop">
+<img src="./images/coffeeshop-image.png" alt="Project Coffee Shop">
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
@@ -32,4 +36,4 @@ O projeto incluiu as seguintes etapas:
 ## ✍️ Team <a name = "team"></a>
 
 - [Abner do Nascimento](https://github.com/abnerns) - Developer
-- [Unect Jr.](unect@unect.com.br) - Product Owner
+- [Unect Jr.](mailto:unect@unect.com.br) - Product Owner
