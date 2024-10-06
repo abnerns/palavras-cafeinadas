@@ -17,6 +17,7 @@
 ## 🧐 About <a name = "about"></a>
 
 <img src="./images/home-image.png" alt="Project Home Page">
+<br> 
 
 O projeto incluiu as seguintes etapas:
 
@@ -24,6 +25,7 @@ O projeto incluiu as seguintes etapas:
 - **Prototipação:** Analisar o design do Figma e discutir com o padrinho estratégias de como abordar o projeto, para poder estruturar a página da maneira mais fiel possível ao seu design original.
 - **Front-end:** Com base no layout disponível, deveria realizar a codificação da interface previamente prototipada, tornando sua visualização agradável e responsiva, com um carrossel funcional e formulário com autenticação.
 
+<br> 
 <img src="./images/coffeeshop-image.png" alt="Project Coffee Shop">
 
 ## ⛏️ Built Using <a name = "built_using"></a>
