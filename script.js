@@ -70,22 +70,36 @@ function messageValidate(){
     }
 }
 
-carousel.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    carousel.scrollLeft += e.deltaY;
-})
 
-backBtn.addEventListener('click', () => {
-    carousel.style.scrollBehavior = "smooth"
-    carousel.scrollLeft -= 1200;
-})
+document.addEventListener("DOMContentLoaded", () => {
+    const carousel = document.getElementById("carousel");
+    const nextBtn = document.getElementById("next");
+    const backBtn = document.getElementById("back");
 
-nextBtn.addEventListener('click', () => {
-    carousel.style.scrollBehavior = "smooth"
-    carousel.scrollLeft += 1200;
-})
+    const updateScroll = () => {
+        let scrollAmount;
 
-window.onload = function(){
+        if (window.innerWidth <= 400) {
+            scrollAmount = 265;
+        } else {
+            scrollAmount = 1200;
+        }
+
+        nextBtn.addEventListener("click", () => {
+            carousel.style.scrollBehavior = "smooth";
+            carousel.scrollLeft += scrollAmount;
+        });
+
+        backBtn.addEventListener("click", () => {
+            carousel.style.scrollBehavior = "smooth";
+            carousel.scrollLeft -= scrollAmount;
+        });
+    };
+
+    updateScroll();
+    window.addEventListener("resize", updateScroll);
+
+
     const menu = document.querySelector('.hamburger');
     const mobile = document.querySelector('.mobile-nav')
     const logoText = document.getElementById('logo-text');
@@ -104,4 +118,4 @@ window.onload = function(){
             logoText.style.display = 'none';
         }
     })
-}
+});
