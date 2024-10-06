@@ -104,6 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const mobile = document.querySelector('.mobile-nav')
     const logoText = document.getElementById('logo-text');
     const background = document.querySelectorAll('main, footer');
+    const links = document.querySelectorAll('.nav-link');
+
 
     menu.addEventListener('click', function () {
         menu.classList.toggle('is-active');
@@ -118,4 +120,14 @@ document.addEventListener("DOMContentLoaded", () => {
             logoText.style.display = 'none';
         }
     })
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+          mobile.classList.remove('is-active');
+          menu.classList.remove('is-active');
+          background.forEach(element => {
+            element.classList.remove('overlay');
+        });
+        });
+      });
 });
