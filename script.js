@@ -79,11 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const updateScroll = () => {
         let scrollAmount;
 
-        if (window.innerWidth <= 400) {
+        if (window.innerWidth <= 440) {
             scrollAmount = 265;
         } else {
             scrollAmount = 1200;
         }
+
+        carousel.addEventListener("wheel", (e) => {
+            e.preventDefault();
+            carousel.style.scrollBehavior = "smooth";
+            carousel.scrollLeft += e.deltaY;
+        })
 
         nextBtn.addEventListener("click", () => {
             carousel.style.scrollBehavior = "smooth";
