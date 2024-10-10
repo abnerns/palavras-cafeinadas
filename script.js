@@ -4,10 +4,6 @@ const nameRegex = /^[A-Za-z\s]+$/;
 const fields = document.querySelectorAll(".required");
 const validate = document.querySelectorAll(".validate");
 
-const carousel = document.getElementById('carousel');
-const backBtn = document.getElementById('back');
-const nextBtn = document.getElementById('next');
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const validName = nameValidate();
