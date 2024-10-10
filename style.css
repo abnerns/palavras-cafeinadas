@@ -218,7 +218,7 @@ main.overlay, footer.overlay {
     gap: 2rem;
     margin: 0 1.5rem 0 1.5rem;
     overflow-x: scroll;
-    height: 450px;
+    height: 64vh;
     align-items: center;
 }
 
@@ -230,7 +230,7 @@ main.overlay, footer.overlay {
     background-color: #F0F0F0;
     border-radius: 8px;
     width: 23vw;
-    height: 420px;
+    height: auto;
     display: flex;
     flex-flow: column wrap;
     padding: 1rem;
