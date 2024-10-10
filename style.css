@@ -616,7 +616,7 @@ footer{
     }
 
     #contact-container .title::after{
-        width: 82.5%;
+        width: 80%;
         left: -15px;
     }
 
