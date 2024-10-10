@@ -114,26 +114,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     menu.addEventListener('click', function () {
-        menu.classList.toggle('is-active');
-        mobile.classList.toggle('is-active');
-        background.forEach(element => {
-            element.classList.toggle('overlay');
-        });
+        if (window.innerWidth <= 440) {
+            menu.classList.toggle('is-active');
+            mobile.classList.toggle('is-active');
+            background.forEach(element => {
+                element.classList.toggle('overlay');
+            });
 
-        if (logoText.style.display === 'none') {
-            logoText.style.display = 'block';
+            if (logoText.style.display === 'none') {
+                logoText.style.display = 'block';
+            } else {
+                logoText.style.display = 'none';
+            }
         } else {
-            logoText.style.display = 'none';
+            logoText.style.display = 'block';
         }
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+              mobile.classList.remove('is-active');
+              menu.classList.remove('is-active');
+              background.forEach(element => {
+                element.classList.remove('overlay');
+            });
+            });
+          });
+
     })
 
-    links.forEach(link => {
-        link.addEventListener('click', () => {
-          mobile.classList.remove('is-active');
-          menu.classList.remove('is-active');
-          background.forEach(element => {
-            element.classList.remove('overlay');
-        });
-        });
-      });
+    const removeMobile = () => {
+        if (window.innerWidth > 440) {
+                menu.classList.remove("is-active");
+                mobile.classList.remove("is-active");
+                background.forEach(element => {
+                    element.classList.remove('overlay');
+                });
+        }
+    };
+    
+    window.addEventListener("resize", removeMobile);
+    removeMobile();
+
 });
