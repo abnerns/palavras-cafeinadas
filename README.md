@@ -1,6 +1,6 @@
 <h3 align="center">Projeto Trainee - Unect Jr.</h3>
 
-<p align="center"> O objetivo deste projeto era desenvolver uma landing page de uma cafeteria fictícia, utilizando dos recursos e conhecimentos fornecidos durante as capacitações para a efetivação ao final do processo trainee da empresa júnior.
+<p align="center"> O objetivo deste projeto era desenvolver uma landing page de uma cafeteria fictícia, utilizando dos recursos e conhecimentos fornecidos pelas capacitações durante o processo trainee da empresa júnior.
     <br> 
 </p>
 
